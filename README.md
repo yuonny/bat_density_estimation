@@ -31,10 +31,10 @@ The VGG16 frontend is fine-tuned at a lower learning rate (`1e-5`) while the bac
 
 ### Loss Function
 
-Root MSE (Euclidean loss) between predicted and ground-truth density maps:
+Euclidean loss between predicted and ground-truth density maps:
 
 ```python
-loss = sqrt(MSE(pred, gt))
+loss = euclidean_loss(pred, gt)
 ```
 
 ---
